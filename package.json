@@ -7,7 +7,7 @@
     "url": "git://github.com/cl-dzoba/travis.git"
   },
   "scripts": {
-    "test": "vows --spec"
+    "test": "grunt test-unit"
   },
   "dependencies": {},
   "devDependencies": {
