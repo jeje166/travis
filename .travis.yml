@@ -1,0 +1,9 @@
+anguage: node_js
+
+# Test with nodejs version 0.10.18
+node_js:
+  - 0.10.18
+
+# Send an email with updates
+notifications:
+  email: "chris.dzoba@creativelive.com"

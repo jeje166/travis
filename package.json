@@ -1,0 +1,20 @@
+{
+  "author": "Dzoba",
+  "name": "travis",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cl-dzoba/travis.git"
+  },
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.7.2",
+    "grunt": "~0.4.0",
+    "grunt-mocha-test": "~0.4.0",
+    "deap": "~0.2.0"
+  }
+}
