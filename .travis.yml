@@ -11,7 +11,7 @@ notifications:
 after_success:
   - cd ..
   - ls
-  - tar -zcvf travis ./travis
+  - tar -cvfz travis.tgz ./travis/
   - ls
   - du -h travis
 #  - chmod 600 .travis/deploy_key.pem # this key should have push access
