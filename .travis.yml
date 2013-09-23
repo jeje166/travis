@@ -7,3 +7,12 @@ node_js:
 # Send an email with updates
 notifications:
   email: "chris.dzoba@creativelive.com"
+
+after_success:
+  - cd ..
+  - tar -zcvf travis ./travis
+  - ls
+#  - chmod 600 .travis/deploy_key.pem # this key should have push access
+#  - ssh-add .travis/deploy_key.pem
+#  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+#  - git push deploy
