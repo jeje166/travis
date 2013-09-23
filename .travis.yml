@@ -1,20 +1,15 @@
 language: node_js
-
-# Test with nodejs version 0.10.18
 node_js:
-  - 0.10.18
-
-# Send an email with updates
+- 0.10.18
 notifications:
-  email: "chris.dzoba@creativelive.com"
-
+  email: chris.dzoba@creativelive.com
 after_success:
-  - cd ..
-  - ls
-  - tar cvfz travis.tgz travis/
-  - ls
-  - du -h travis
-#  - chmod 600 .travis/deploy_key.pem # this key should have push access
-#  - ssh-add .travis/deploy_key.pem
-#  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
-#  - git push deploy
+- cd ..
+- ls
+- tar cvfz travis.tgz travis/
+- ls
+- du -h travis
+- echo $TEST_VAR
+env:
+  global:
+    secure: KyVMBbPDuwigox2f3i5aIZB+T1Y/F/ZYt9JFqGylJMZYsDMtoNq/7TKkJZpb3CDAE3H0yd3SEdZczzgkCsMpqZo9kf/moMlmmr11XpCjoBNITMZyTN7Oc5MwY8Dizi2CjShfWCkLpWMKYrjOSPM0OviKVLhdpZZqsfV7KkpEtZo=
